@@ -1,0 +1,23 @@
+{
+  "name": "react-test",
+  "version": "1.0.0",
+  "description": "React Hello World",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bm3719/react-test.git"
+  },
+  "author": "Bruce C. Miller",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/bm3719/react-test/issues"
+  },
+  "homepage": "https://github.com/bm3719/react-test#readme",
+  "devDependencies": {
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}
