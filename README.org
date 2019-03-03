@@ -1,0 +1,16 @@
+#+STARTUP: showall
+
+* react-test
+
+A basic React client-only site.
+
+This is part 1 of my ClojureScript learning workflow, intended to familiarize
+myself with React conventions.
+
+** Usage
+
+TODO: Add notes for running site.
+
+** Notes
+
+TODO: Add setup workflow here.
