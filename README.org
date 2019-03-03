@@ -9,8 +9,41 @@ myself with React conventions.
 
 ** Usage
 
-TODO: Add notes for running site.
+To run in webpack-dev-server mode:
 
-** Notes
+#+BEGIN_SRC sh
+npm run start
+#+END_SRC
 
-TODO: Add setup workflow here.
+To run a deployment build:
+
+#+BEGIN_SRC sh
+npm run build
+#+END_SRC
+
+** Workflow
+
+- Create a project folder, initialize git, and host it somewhere if desired.
+- Run: ~npm init~
+- Run (-D installs as dev dependencies): ~npm i webpack webpack-cli -D~
+- Create =src= subfolder.
+- Create index.js in src.  Maybe put a placeholder of: console.log("hello");
+- Add =start= and =build= targets in package.json.
+- Test current dev setup with ~npm run start~ and/or ~npm run build~.
+- Run (-S installs as project dependencies): ~npm i react react-dom -S~
+- To support compilation to ES5, install babel:
+  ~npm i babel-core babel-loader@7 babel-preset-env babel-preset-react -D~
+
+  Note: babel-loader@8 doesn't work with the version of babel-core (6.x) that
+  is currently pulled in by it.
+- Create webpack.config.js file with babel-loader config.
+- Create .babelrc file to specify babel-loader options.
+- At this point, react is ready to use in index.js and an index.html can be
+  created (also in src).
+- Add html-webpack-plugin to inject the JS file into index.html:
+  ~npm i html-webpack-plugin -D~
+- Add html-webpack-plugin configuration to webpack.config.js.
+- Run: ~npm i webpack-dev-server -D~
+- Edit package.json to run =webpack-dev-server= for the =start= target.
+- Now running ~npm start~ will run a dev server and auto-rebuild on changes.
+  If the =--open= flag was included, this will auto-launch a browser.
