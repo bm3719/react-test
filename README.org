@@ -27,7 +27,8 @@ npm run build
 - Run: ~npm init~
 - Run (-D installs as dev dependencies): ~npm i webpack webpack-cli -D~
 - Create =src= subfolder.
-- Create index.js in src.  Maybe put a placeholder of: console.log("hello");
+- Create index.js in =src=.  Maybe put a placeholder of:
+  ~console.log("hello");~
 - Add =start= and =build= targets in package.json.
 - Test current dev setup with ~npm run start~ and/or ~npm run build~.
 - Run (-S installs as project dependencies): ~npm i react react-dom -S~
@@ -39,7 +40,7 @@ npm run build
 - Create webpack.config.js file with babel-loader config.
 - Create .babelrc file to specify babel-loader options.
 - At this point, react is ready to use in index.js and an index.html can be
-  created (also in src).
+  created (also in =src=).
 - Add html-webpack-plugin to inject the JS file into index.html:
   ~npm i html-webpack-plugin -D~
 - Add html-webpack-plugin configuration to webpack.config.js.
